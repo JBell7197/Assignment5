@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bgo-3L-qG5">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eHs-3T-eyM">
+                                <rect key="frame" x="30" y="89" width="333" height="699"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6e-9P-hnW">
+                                        <rect key="frame" x="30" y="0.0" width="273" height="223"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="pcj-W2-9yQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="223"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="pcj-W2-9yQ" secondAttribute="bottom" id="Nou-bP-jTW"/>
+                                            <constraint firstItem="pcj-W2-9yQ" firstAttribute="centerX" secondItem="k6e-9P-hnW" secondAttribute="centerX" id="Vsj-x6-bjD"/>
+                                            <constraint firstItem="pcj-W2-9yQ" firstAttribute="centerY" secondItem="k6e-9P-hnW" secondAttribute="centerY" id="ceU-Hg-XoR"/>
+                                            <constraint firstAttribute="trailing" secondItem="pcj-W2-9yQ" secondAttribute="trailing" id="kFv-80-nhL"/>
+                                            <constraint firstItem="pcj-W2-9yQ" firstAttribute="top" secondItem="k6e-9P-hnW" secondAttribute="top" id="wDD-oQ-ndk"/>
+                                            <constraint firstItem="pcj-W2-9yQ" firstAttribute="leading" secondItem="k6e-9P-hnW" secondAttribute="leading" id="yfC-BG-YXH"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Pittsburgh Steelers rook! Choose your opponent!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igF-jZ-XCV">
+                                        <rect key="frame" x="0.0" y="238" width="333" height="223"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PYc-I5-wYN">
+                                        <rect key="frame" x="0.0" y="476" width="333" height="223"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUS-72-MxB">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="73"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="KANSAS CITY CHIEFS">
+                                                    <backgroundConfiguration key="background" cornerRadius="11">
+                                                        <color key="backgroundColor" red="0.913495481" green="0.69933182000000005" blue="0.047400325540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c5x-FJ-PAE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaB-hB-aUX">
+                                                <rect key="frame" x="0.0" y="75" width="333" height="73"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="BALTIMORE RAVENS">
+                                                    <backgroundConfiguration key="background" cornerRadius="11">
+                                                        <color key="backgroundColor" red="0.913495481" green="0.69933182000000005" blue="0.047400325540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWk-pq-OH7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-si-yos">
+                                                <rect key="frame" x="0.0" y="150" width="333" height="73"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="RESTART">
+                                                    <backgroundConfiguration key="background" cornerRadius="11">
+                                                        <color key="backgroundColor" red="0.913495481" green="0.69933182000000005" blue="0.047400325540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="restartButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O82-z0-QK8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="k6e-9P-hnW" secondAttribute="trailing" constant="30" id="4gL-lP-y2f"/>
+                                    <constraint firstItem="k6e-9P-hnW" firstAttribute="leading" secondItem="eHs-3T-eyM" secondAttribute="leading" constant="30" id="7Je-et-HvU"/>
+                                    <constraint firstAttribute="trailing" secondItem="PYc-I5-wYN" secondAttribute="trailing" id="Y0F-G5-uAv"/>
+                                    <constraint firstItem="PYc-I5-wYN" firstAttribute="leading" secondItem="eHs-3T-eyM" secondAttribute="leading" id="hEa-V3-jNB"/>
+                                    <constraint firstItem="igF-jZ-XCV" firstAttribute="height" secondItem="k6e-9P-hnW" secondAttribute="height" id="m4N-qQ-IOQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="igF-jZ-XCV" secondAttribute="trailing" id="xea-b3-srQ"/>
+                                    <constraint firstItem="PYc-I5-wYN" firstAttribute="height" secondItem="k6e-9P-hnW" secondAttribute="height" id="zC6-aN-pXh"/>
+                                    <constraint firstItem="igF-jZ-XCV" firstAttribute="leading" secondItem="eHs-3T-eyM" secondAttribute="leading" id="zsU-S5-qnB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bgo-3L-qG5" secondAttribute="bottom" id="Biq-qt-22J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eHs-3T-eyM" secondAttribute="bottom" constant="30" id="DVr-dY-xTo"/>
+                            <constraint firstItem="eHs-3T-eyM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="LWl-sb-nm6"/>
+                            <constraint firstItem="eHs-3T-eyM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="MBd-ic-QmG"/>
+                            <constraint firstItem="bgo-3L-qG5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pe8-Z1-45J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eHs-3T-eyM" secondAttribute="trailing" constant="30" id="Rm4-de-We8"/>
+                            <constraint firstItem="bgo-3L-qG5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VA3-cR-chB"/>
+                            <constraint firstAttribute="trailing" secondItem="bgo-3L-qG5" secondAttribute="trailing" id="uLy-ni-kdh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="bgo-3L-qG5" id="e5t-Sa-5OE"/>
+                        <outlet property="choiceOneButton" destination="kUS-72-MxB" id="XsU-LH-2zn"/>
+                        <outlet property="choiceTwoButton" destination="aaB-hB-aUX" id="VRj-hx-P46"/>
+                        <outlet property="promptLabel" destination="igF-jZ-XCV" id="LOY-Vs-OSH"/>
+                        <outlet property="restartButton" destination="jPn-si-yos" id="YfM-4n-82Y"/>
+                        <outlet property="topImage" destination="pcj-W2-9yQ" id="UYd-6F-Nsl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo2" width="94.666664123535156" height="59"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
